@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="/index.js"></script>
+
+</head>
+
+<body class="bg-lgc mt-5 mx-auto">
+  <div class="d-flex flex-column mb-5 vdc">
+    <h1 class="mx-auto text-start fs-3 p-0 m-0">SPLI</h1>
+    <h1 class="mx-auto text-start fs-3 p-0 m-0">TTER</h1>
+  </div>
+
+
+  <main class="bg-light container d-flex row w-md-75 rounded-3 mx-auto p-md-5 p-2">
+
+    <div class="col-md-6 col-12 bg-light p-md-4 mx-auto">
+      <h2 class="font-sp dgc fs-5 ms-4 ms-md-0 ">Bill
+
+      </h2>
+      <div class="col-md-10 ms-4 ms-md-0 me-4 me-md-0 position-relative">
+        
+        <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-currency-dollar text-secondary position-absolute"></i></label>
+        <input type="number" min="0" class="form-control text-end" id="bill" placeholder="">
+      </div>
+
+      <h2 class="fs-5 gc mt-5 ms-4 ms-md-0">  Select Tip %</h2>
+
+      <div class="d-flex gap-2 mx-auto">
+        <div class="col-md-12  d-flex flex-wrap gap-2 mx-auto justify-content-center justify-content-md-start">
+          <button class="col-5 col-md-3 bg-vdc text-white px-2 py-1 border-0 rounded-3 percent" data-percent="5">5%</button>
+          <button class="col-5 col-md-3 bg-vdc text-white px-2 py-1 border-0 rounded-3 percent" data-percent="10">10%</button>
+          <button class="col-5 col-md-3 bg-vdc px-2 py-1 border-0 rounded-3 bg-cy vdc percent"data-percent="15">15%</button>
+          <button class="col-5 col-md-3 bg-vdc text-white px-2 py-1 border-0 rounded-3 percent"data-percent="25">25%</button>
+          
+          <button class="col-5 col-md-3 bg-vdc text-white px-2 py-1 border-0 rounded-3 percent"data-percent="50">50%</button>
+         
+          <div class="vdc p-0 m-0 border-0 rounded-3 bg-lgc col-5 col-md-3 custom text-white">
+            <input type="number" min="0" class="form-control bg-lgc text-center" id="custom" placeholder="Custom">
+          </div>
+        </div>
+  
+  
+      
+
+      </div>
+
+      <h2 class="fs-5 gc mt-5 ms-4 ms-md-0">Number of People</h2>
+
+      <div class="col-md-10 mb-3 mb-md-0 ms-4 me-4 me-md-0 ms-md-0 position-relative">
+        <label for="exampleFormControlInput1" class="form-label "><i class="bi bi-person-fill position-absolute text-secondary"></i></label>
+        <input  type="number" min="0" class="form-control fw-bold text-end" id="people" placeholder="">
+      </div>
+
+    </div>
+
+
+
+    <div class="col-md-6 col-12 bg-vdc d-flex justify-content-between flex-column p-md-3 rounded-2">
+      
+      <div class="d-flex">
+
+        <div class="col-md-5 p-3 mt-4 bg-vdc text-white">
+          <h2 class="tip-font"> Tip Amount</h2>
+          <h3 class="lgc person-font"> / person</h3>
+          <h2 class="tip-font"> Total</h2>
+          <h3 class="lgc person-font"> / person</h3>
+        </div>
+        <div class="col-md-7 mt-4 p-3">
+  
+          <div class="col-md-10 bg-vdc">
+            <h3 class="cy fs-1 tip-amount">$0.00</h3>
+            <h3 class="cy mt-3 fs-1 total-amount">$0.00</h3>
+          </div>
+  
+        </div>
+
+      </div>
+
+    
+
+      <button class="res bg-dgc vdc w-75 mx-auto py-2 rounded-3 border-0 mb-3" data-reset="reset">RESET</button>
+
+    </div>
+
+
+  </main>
+
+  
+</body>
+
+</html>

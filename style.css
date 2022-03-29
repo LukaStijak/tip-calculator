@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* colors */
+.vdc{
+    color:hsl(183, 100%, 15%) ;
+}
+.bg-vdc{
+    background-color:hsl(183, 100%, 15%) ;
+}
+.dgc{
+    color:hsl(186, 14%, 43%) ;
+}
+.bg-dgc{
+    background-color:#26c2ad;
+}
+.gc{
+   color: hsl(184, 14%, 56%);
+}
+.lgc{
+    color:hsl(185, 41%, 84%) ;
+}
+.bg-lgc{
+    background-color: hsl(185, 41%, 84%);
+}
+.vlgc{
+    color:hsl(189, 41%, 97%) ;
+}
+.cy{
+    color: #26c2ad;
+}
+
+.bg-cy{
+    background-color: #26c2ad;
+}
+/* colors */
+
+/* font */
+
+.font-size{
+    font-size: 24px;
+}
+
+/* font */
+body{
+    max-width:1440px;
+}
+
+h2, h1,h3, button, #custom, #bill, #people {
+    font-family: 'Space Mono', monospace;
+}
+
+.tip-font{
+    font-size: 1rem;
+}
+
+.person-font{
+    font-size: 0.8rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+i {
+    bottom:8px;
+    left:8px;
+}
